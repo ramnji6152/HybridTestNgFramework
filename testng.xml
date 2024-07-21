@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.tutorialsNinja.qa.listeners.Listeners"/>
+    </listeners>
+
+
+    <test verbose="2" preserve-order="true" name="C:/Users/welcome/Desktop/HybridTestNgFramework">
+        <classes>
+            <class name="com.tutorialsNinja.qa.testcases.LoginPageTest">
+        <methods>
+            <include name="verifyLoginWithValidCredentials"/>
+            <include name="verifyLoginWithInvalidCredentials"/>
+    </methods>
+    </class>
+        <class name="com.tutorialsNinja.qa.testcases.RegisterPageTest">
+            <methods>
+                <include name="registerTheDetails"/>
+                <include name="registerWithOutFillingDetails"/>
+            </methods>
+        </class>
+        <class name="com.tutorialsNinja.qa.testcases.SearchPageTest">
+            <methods>
+                <include name="searchWithValidProduct"/>
+                <include name="searchWithInValidProduct"/>
+            </methods>
+        </class>
+        <class name="experiments.Demo">
+            <methods>
+                <include name="utilities"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+</suite>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tutorialsNinja.qa.listeners.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="C:/Users/welcome/Desktop/HybridTestNgFramework(failed)">
+    <classes>
+      <class name="com.tutorialsNinja.qa.testcases.RegisterPageTest">
+        <methods>
+          <include name="registerWithOutFillingDetails"/>
+          <include name="registerTheDetails"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tutorialsNinja.qa.testcases.RegisterPageTest -->
+      <class name="com.tutorialsNinja.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="verifyLoginWithValidCredentials" invocation-numbers="0 1 2"/>
+          <include name="setUp"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tutorialsNinja.qa.testcases.LoginPageTest -->
+      <class name="com.tutorialsNinja.qa.testcases.SearchPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="searchWithInValidProduct"/>
+          <include name="searchWithValidProduct"/>
+        </methods>
+      </class> <!-- com.tutorialsNinja.qa.testcases.SearchPageTest -->
+    </classes>
+  </test> <!-- C:/Users/welcome/Desktop/HybridTestNgFramework(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
